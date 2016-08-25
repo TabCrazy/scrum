@@ -1,21 +1,97 @@
 /* Base Application Styles */
+@import 'variable';
+ul,ol,li{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+
 body {
-  color: #fff;
-  background: #222;
+  color: $co_bgc_00;
+  background: $co_txt_ff;
+  font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif ,"微软雅黑";
 }
+.head {
+  background: $co_bgc_10;
+  height:60px;
+  line-height:60px;
 
-.index img {
-  margin: 40px auto;
-  border-radius: 4px;
-  background: #fff;
-  display: block;
+  @at-root {
+    .logo{
+      color:$co_txt_ff;
+      float:left;
+      font-size:18px;
+      padding:0 0 0 20px;
+    }
+    .nav {
+      color:$co_txt_ff;
+      float:right;
+      @at-root {
+        ul {}
+        li {
+          float:left;
+          padding:0 15px;
+          font-size: 14px;
+        }
+        li:hover {
+          background: $co_icon_06;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
+.content {
+  background: $co_bgc_f3;
+}
+//讨论版
+.discuss {
+  width: 90%;
+  padding:10px;
+  margin:0 auto;
+  @at-root {
+    .discuss_head {
+      background: $co_txt_ff;
+      border-radius:4px;
+      @at-root {
+        .discuss_text {
+          height:60px;
+          /**/
+          textarea {
+            border:0px;
+            width:100%;
+            height:100%;
+            resize:none;
+            padding:5px;
+          }
+          /**/
+          textarea:focus {
+            border:none;
+            outline:none;
+          }
+        }
+        /**/
+        .discuss_option {
+          border-top:1px solid $co_txt_dd;
+          padding:5px;
+          /**/
+          text-align:right;
+          .ant-btn {
+            border-radius:4px;
 
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
+          }
+          /**/
+          .option_icon {
+            float:left;
+            font-size:14px;
+            /**/
+            i {
+              padding:5px; cursor: pointer;
+            }
+          }
+        }
+
+      }
+    }
+  }
 }
