@@ -1,7 +1,7 @@
 [
   {
     "id":1000,
-    "UserName":"TabTang",
+    "UserName":"Jack",
     "replyDate":"2016-10-10 08:12:25",
     "replyContent":"请问Agile是什么东西",
     "replyList":[
@@ -10,9 +10,15 @@
         "UserName":"Aaron",
         "replyDate":"2016-10-10 08:22:25",
         "replyContent":"Agile是软件敏捷开发方式",
-        "replyList":[
-          {}
-        ],
+        "replyList":[],
+        "like":2
+      },
+      {
+        "id":1007,
+        "UserName":"Aaron",
+        "replyDate":"2016-10-10 08:22:25",
+        "replyContent":"Agile是软件敏捷开发方式",
+        "replyList":[],
         "like":2
       }
     ],
@@ -29,9 +35,7 @@
         "UserName":"Darcy",
         "replyDate":"2016-10-10 08:22:25",
         "replyContent":"Agile是软件敏捷开发方式",
-        "replyList":[
-          {}
-        ],
+        "replyList":[],
         "like":8
       }
     ],
@@ -48,9 +52,7 @@
         "UserName":"Fiona",
         "replyDate":"2016-10-10 08:22:25",
         "replyContent":"Agile是软件敏捷开发方式",
-        "replyList":[
-          {}
-        ],
+        "replyList":[],
         "like":22
       }
     ],
