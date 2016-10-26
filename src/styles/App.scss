@@ -8,7 +8,7 @@ ul,ol,li{
 
 body {
   color: $co_bgc_00;
-  background: $co_txt_ff;
+  background: $co_bgc_f3;
   font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif ,"微软雅黑";
 }
 .head {
@@ -91,6 +91,56 @@ body {
           }
         }
 
+      }
+    }
+    .discuss_list {
+      padding:20px 0;
+      .discuss_item {
+        background: $co_txt_ff;
+        border-radius:4px;
+        margin:0 0 8px 0;
+        .dis_item_head{
+          height:30px;
+          padding:5px;
+          @at-root {
+            .item_head { width:30px; height:30px; border-radius:50%; background: $co_bgc_f3; float:left; line-height: 30px; text-align: center; font-size: 26px; font-weight: bold; color: $co_icon_01; }
+            .item_name { height:30px; float:left; line-height:30px; padding:0 5px;}
+            .item_date { height:30px; float:left; line-height:30px; }
+          }
+        }
+        .dis_item_cont { clear: both; padding: 10px 10px 10px 40px; font-size: 14px; border-bottom:1px solid $co_bgc_f3;
+          @at-root {
+            .item_operate { text-align:right;
+              span { font-size:12px; padding:0 5px; cursor: pointer; }
+              span.sign { color:$co_icon_01; }
+              span.unmark {}
+            }
+          }
+        }
+        .dis_item_reply {
+          .rep_item {clear: both; padding: 10px 0px 10px 40px; font-size: 14px;}
+          .dis_item_cont { border:0; }
+          @at-root {
+            .repitem_head {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              background: $co_bgc_f3;
+              float: left;
+              line-height: 30px;
+              text-align: center;
+              font-size: 26px;
+              font-weight: bold;
+              color: $co_icon_01;
+            };
+            .repitem_name {
+              height:30px; float:left; line-height:30px; padding:0 5px;
+            };
+            .repitem_date {
+              height:30px; float:left; line-height:30px;
+            };
+          }
+        }
       }
     }
   }

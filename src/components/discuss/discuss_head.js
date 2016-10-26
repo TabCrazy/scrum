@@ -18,7 +18,7 @@ const DiscussHead = React.createClass({
 
   getInitialState:function(){
     return {
-      value : '',
+      value : ''
     }
   },
 
@@ -27,12 +27,12 @@ const DiscussHead = React.createClass({
       text:this.state.value,
       createDate:new Date().format('yyyy-MM-dd hh:mm:ss')
     };
-    if( obj.text.trim() ){
+    if( obj.text.trim() !== '' ){
       DiscussAction.create(obj);
     }
-    console.log(obj);
+
     this.setState({
-      value : '',
+      value : ''
     });
   },
 
