@@ -14,12 +14,14 @@ var _DisData;
 _DisData = [
   {
     'id': 'S1000',
+    'parentId':'0',
     'UserName': 'Jack',
     'replyDate': '2016-10-10 08:12:25',
     'replyContent': '请问Agile是什么东西',
     'replyList': [
       {
         'id': 'S1001',
+        'parentId':'S1000',
         'UserName': 'Aaron',
         'replyDate': '2016-10-10 08:22:25',
         'replyContent': 'Agile是软件敏捷开发方式',
@@ -30,6 +32,7 @@ _DisData = [
       },
       {
         'id': 'S1007',
+        'parentId':'S1000',
         'UserName': 'Aaron',
         'replyDate': '2016-10-10 08:22:25',
         'replyContent': 'Agile是软件敏捷开发方式',
@@ -45,12 +48,14 @@ _DisData = [
   },
   {
     'id': 'S1002',
+    'parentId':'0',
     'UserName': 'Tab',
     'replyDate': '2016-10-10 08:12:25',
     'replyContent': '请问Agile是什么东西',
     'replyList': [
       {
         'id': 'S1003',
+        'parentId':'S1002',
         'UserName': 'Ann',
         'replyDate': '2016-10-10 08:22:25',
         'replyContent': 'Agile是软件敏捷开发方式',
@@ -61,7 +66,8 @@ _DisData = [
       },
       {
         'id': 'S1004',
-        'UserName': 'JS',
+        'parentId':'S1002',
+        'UserName': 'Javascript',
         'replyDate': '2016-10-10 08:22:25',
         'replyContent': 'Agile是软件敏捷开发方式',
         'replyList': [],

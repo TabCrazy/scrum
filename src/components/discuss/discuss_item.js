@@ -33,7 +33,7 @@ const DiscussItem = React.createClass({
 
         if( reItemData[i].headIcon == '' ){
           //没有上传头像，取name的前两个字母
-          reItemData[i].head = reItemData[i].UserName.substring(0,1).toUpperCase();
+          reItemData[i].head = reItemData[i].UserName.substring(0,1).toUpperCase() + reItemData[i].UserName.slice(1,2);
         }else{
           //有上传头像，取返回图片路径
           reItemData[i].head = '<img src=' + reItemData[i].headIcon +'/>';
